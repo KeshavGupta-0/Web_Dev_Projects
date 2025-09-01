@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audicore Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet_log_sign.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="fbox"> 
+            <h1 class="title">Sign Up</h1>
+
+            <form method="POST" action="{{ url_for('signup') }}">
+                <!-- Username -->
+                <div class="ld">
+                    <label for="username" class="lab">Username</label>
+                    <input type="text" placeholder="Choose a username" class="inp" id="username" name="username" required>
+                </div>
+
+                <!-- Email -->
+                <div class="ld">
+                    <label for="email" class="lab">Email</label>
+                    <input type="email" placeholder="Enter your email" class="inp" id="email" name="email" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="ld">
+                    <label for="phone" class="lab">Phone Number</label>
+                    <input type="tel" placeholder="Enter your phone number" class="inp" id="phone" name="phone" required>
+                </div>
+
+                <!-- Password -->
+                <div class="ld">
+                    <label for="password" class="lab">Password</label>
+                    <input type="password" placeholder="Enter password" class="inp" id="password" name="password" required>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="ld">
+                    <label for="confirm_password" class="lab">Confirm Password</label>
+                    <input type="password" placeholder="Re-enter password" class="inp" id="confirm_password" name="confirm_password" required>
+                </div>
+
+                <!-- Terms Checkbox -->
+                <div class="rem">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms" >I agree to the Terms & Conditions</label>
+                </div>
+
+                <!-- Submit -->
+                <div class="ld">
+                    <input id="sub" type="submit" value="Sign Up">
+                </div>
+            </form>
+
+            <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+            <p><a href="{{ url_for('home') }}">← Back to Home</a></p>
+            </div>
+            <div class="gbox">
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>
+                <div class="gitem"></div>        
+            </div>
+        </div>
+    </div>
+</body>
+</html>

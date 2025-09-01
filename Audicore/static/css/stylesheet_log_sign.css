@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  box-sizing: border-box;
+  background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+}
+.container{
+    display: flex;
+    background-color: rgb(30, 24, 24);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.gbox{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap: 0px;
+    background-color:rgb(30, 24, 24) ;
+    grid-template-columns: repeat(10, 0.1fr); 
+    grid-template-rows: repeat(10, 0.1fr);
+    background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+}
+.gitem{
+    border: 1px solid rgba(0, 255, 255, 0.05);
+    width: 10vw;
+    height: 10vh;
+    transition: 0.1s ease;
+}
+.gitem:hover{
+    background-color: aqua;
+}
+.fbox{
+    position: absolute;
+    z-index: 1;
+    height: fit-content;
+    width: 400px;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(30, 24, 24);
+    animation-name: come;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    background: rgba(0, 0, 0, 0.6); /* Glassmorphism */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+@keyframes come {
+  from {
+    transform: scale(1.2) translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+.fbox:hover{
+    transition: 0.7s ease;
+    box-shadow: 10px 0px 5px aqua,-10px 0px 5px aqua,0px 10px 5px aqua,0px -10px 5px aqua;
+    transform: scale(1.02);
+
+}
+.fbox:hover    h1{
+        color: aquamarine;
+        text-shadow: 0.3rem 0.3rem 0.5rem aqua;
+    }
+.fbox:hover    .lab{
+        color: aquamarine; 
+        transform: translateY(0.5rem);   
+        z-index: 2;    
+        font-size: 0.9rem;
+        background-color:rgb(30, 24, 24) ;
+        width: fit-content;
+        padding-right: 0.2rem;
+        border-radius: 5px;
+    }
+
+h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0 0 5px #00ffff;
+    color: #00ffff;   
+}
+p{
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #e0ffff;
+    text-shadow: 0 0 3px #00ffff;
+}
+p a{
+    color: aquamarine;
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.lab,.rem{
+    color: #e0ffff;
+    text-shadow: 0 0 3px #00ffff;
+    font-size: 1rem;
+}
+
+.inp{
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgb(131, 128, 128);
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: inset 0 0 5px rgba(0, 255, 255, 0.3);
+
+}
+.inp:focus{
+    transition: 0.5s ease;
+    border: 2px solid aqua;
+    background-color: rgb(49, 54, 54);
+}
+
+.ld{
+    display: flex;
+    text-align: left;
+    height: fit-content;
+    width: auto;
+    margin: 3px;
+    flex-direction: column;
+}
+.rem{
+    display: flex;
+    flex-direction: row;
+    height:fit-content ;
+    width: fit-content;
+    margin: 3px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 2px;
+}
+
+#sub{
+    outline: none;
+    border: 2px solid rgb(131, 128, 128);
+    color: #0f2027;
+    text-shadow: 0 0 3px #00ffff;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00ffff, #0077ff);
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+a{
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 5px #00ffff;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+#sub:active{
+    border: 2px solid rgba(0, 0, 0, 0.6);;
+    color:rgb(49, 54, 54);
+    background-color: rgb(51, 57, 60);
+}

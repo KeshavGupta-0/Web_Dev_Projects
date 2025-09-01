@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audicore</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="/static/assets/audicore-main-logo.png" alt="Audicore Logo" class="logo" />
+            <h1 class="brand-name">AUDICORE</h1>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Features</a>
+            <a href="#">About</a>
+            <a href="#">Explore</a>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+        <div class="glow-layer glow1"></div>
+        <div class="glow-layer glow2"></div>
+        <div class="glow-layer glow3"></div>
+        <div class="hero-content-container">
+            <img src="{{url_for('static',filename='assets/audicore-main-logo.png')}}" alt="Audicore Logo" class="hero-logo">
+            <div class="hero-content">
+                <h1 class="hero-title">AUDICORE</h1>
+                <p class="hero-tagline">WHERE EVERY NOTE MATTERS.</p>
+                <div>
+                    <a href="{{url_for('login')}}" class="hero-btn">GET STARTED</a>
+                    <a href="{{ url_for('guest') }}" class="hero-btn alt-btn">CONTINUE WITHOUT LOGIN</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="featured-playlists">
+        <h2>FEATURED PLAYLISTS</h2>
+        <div class="playlist-grid">
+            <div class="playlist-card">
+                <img src="{{url_for('static',filename='assets/top-hits.png')}}" alt="Top Hits">
+                <p>Top Picks</p>
+            </div>
+            <div class="playlist-card">
+                <img src="{{url_for('static',filename='assets/vibes.png')}}" alt="Vibes Playlist">
+                <p>Vibes</p>
+            </div>
+            <div class="playlist-card">
+                <img src="{{url_for('static',filename='assets/edm-hits.png')}}" alt="EDM Hits">
+                <p>EDM Hits</p>
+            </div>
+            <div class="playlist-card">
+                <img src="{{url_for('static',filename='assets/chillout.png')}}" alt="Chillout">
+                <p>Chillout</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="music-player">
+        <div class="player-left">
+            <img src="/static/images/album-art.jpg" alt="Album Art" class="album-art">
+            <div class="song-info">
+                <div class="song-title">Song Title</div>
+                <div class="artist-name">Artist Name</div>
+            </div>
+        </div>
+
+        <div class="player-center">
+            <button class="control-btn"><i class="fa-solid fa-backward"></i></button>
+            <button class="control-btn"><i class="fa-solid fa-play"></i> </button>
+            <button class="control-btn"><i class="fa-solid fa-forward"></i></button>
+            <input type="range" class="progress-bar" min="0" max="100" value="0">
+        </div>
+
+        <div class="player-right">
+            <i class="fas fa-volume-up"></i>
+            <input type="range" class="volume-slider" min="0" max="100" value="30">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="/static/assets/audicore-main-logo.png" alt="Audicore Logo" class="footer-logo">
+            <span class="footer-brand">Audicore</span>
+        </div>
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Library</a>
+            <a href="#">Playlist</a>
+        </div>
+        <div class="footer-socials">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Audicore. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
