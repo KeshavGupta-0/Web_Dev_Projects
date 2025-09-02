@@ -39,12 +39,6 @@ def login():
             return "Invalid Credentials"
     return render_template("login.html")
 
-
-@app.route("/guest")
-def guest():
-    return render_template("guest.html")
-
-
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
     if request.method == "POST":
@@ -97,4 +91,5 @@ def logout():
     return redirect(url_for("login"))
 
 if __name__=="__main__":
+
     app.run(debug=True)
